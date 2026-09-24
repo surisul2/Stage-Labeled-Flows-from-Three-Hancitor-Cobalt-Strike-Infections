@@ -19,8 +19,8 @@ This repository provides the flow-level stage labels, the IOC-based labeling rul
 ## Source traffic
 
 | Case | MTA post | Original pcap | SHA-256 | Infected host | IOC txt
-|---|---|---|---|---|
-| Case 1 | https://www.malware-traffic-analysis.net/2021/06/01/index.html | 2021-06-01-Hancitor-with-Cobalt-Stike-and-netping-tool.pcap.zip  | 1faedfa1bfe1304f471bd56973f74174cfc3958d05f2ad1a3a86af7e1dc6b7b0 | 10.6.1.101 | 2021-06-01-Hancitor-IOCs.txt.zip 
+|---|---|---|---|---|---| 
+| Case 1 | https://www.malware-traffic-analysis.net/2021/06/01/index.html | 2021-06-01-Hancitor-with-Cobalt-Stike-and-netping-tool.pcap.zip | 1faedfa1bfe1304f471bd56973f74174cfc3958d05f2ad1a3a86af7e1dc6b7b0 | 10.6.1.101 | 2021-06-01-Hancitor-IOCs.txt.zip 
 | Case 2 | https://www.malware-traffic-analysis.net/2021/06/17/index.html | 2021-06-17-Hancitor-infection-with-Cobalt-Strike.pcap.zip | e2447300227afc09561b107861e694d6277bc5c0563735fe59a683b3729c6d22 | 10.17.6.93 | 2021-06-17-Hancitor-IOCs.txt.zip 
 | Case 3 | https://www.malware-traffic-analysis.net/2021/09/02/index.html | 2021-09-02-Hancitor-with-Cobalt-Strike.pcap.zip | 31f17459dbebb365975cd5b7bbf850c638dcf4379ee69e646692d35eaf58749d | 10.0.0.113 | 2021-09-02-Hancitor-with-Cobalt-Strike-IOCs.txt.zip
 
@@ -35,7 +35,7 @@ Each MTA post also provides the IOC text file referenced in the `ioc_filename` c
 **Stages.** Stages are defined with reference to MITRE ATT&CK tactics & techniques.
 
 | Label | Technique | ID | Tactic | Communication |
-|---|---|---|
+|---|---|---|---|---|
 | S1 | Spearphishing Link | T1566.002 | Initial Access | Lure redirection via legitimate service |
 | S2 | Malicious Link | T1204.001 | Execution | Malicious document delivery |
 | S3 | System Network Configuration Discovery | T1016(.001) | Discovery | External IP check (api.ipify.org) |
